@@ -16,7 +16,8 @@
 
     <!-- Custom CSS -->
     <link href="css/one-page-wonder.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Montserrat:bold">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -39,11 +40,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Emergent</a>
+                <a class="navbar-brand" href="#"><img class="logo img-responsive" src="./img/Emergent_logo.png" /></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav pull-right">
                     <li>
                         <a href="#about">About</a>
                     </li>
@@ -52,6 +53,15 @@
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
+                    </li>
+                     <li>
+                        <a href="#instagram"><img src="./img/icon-instagram.png" /></a>
+                    </li>
+                     <li>
+                        <a href="#Facebook"><img src="./img/icon-facebook.png" /></a>
+                    </li>
+                     <li>
+                        <a href="#Twitter"><img src="./img/icon-twitter.png" /></a>
                     </li>
                 </ul>
             </div>
@@ -63,29 +73,38 @@
     <!-- Full Width Image Header -->
     <header class="header-image">
         <div class="headline">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-8">
-                        <h1 class="headlinetxt">Your Workout Just Got an Upgrade</h1>
-                        <h4 class="uvp">Comfortably and Safely Store Your Essentials – Phones, Keys, Medical Equipment, IDs – in the best fitting athletic shorts you’ll ever wear. </h4>
+                    <div class="col-md-6">
+                        <h1 class="headlinetxt" id="maintxt">Your Workout Just Got an Upgrade</h1>
+                        <h4 class="headlinetxt" id="uvp">Comfortably and Safely Store Your Essentials – Phones, Keys, Medical Equipment, IDs – in the best fitting athletic shorts you’ll ever wear. </h4>
                     </div>
-                    <div class="col-md-4">
-                        <form class="form-horizontal">
-                            <div class="form-group"> <!-- Email -->
-                                <label for="email_id" class="control-label col-sm-2">Email</label>
-                                <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="email_id" name="email_name" placeholder="name@domain.com">
+                    <div class="col-md-6">
+                        <div class="email">
+                            <h1>Be the first to know about our Launch</h1>
+                            <p>Get The Perks:</p>
+                            <ul>
+                                <li>
+                                    <small>Auto-Entry into our giveaway contests</small>
+                                </li>
+                                <li>
+                                    <small>Member-only discounts and content</small>
+                                </li>
+                                <li>
+                                    <small>Priority Notification of Kickstarter Launch</small>
+                                </li>
+                            </ul>
+                            <form class="form-horizontal">
+                                <div class="form-group"> <!-- Email -->
+                                    <label for="email_id" class="control-label col-sm-2">Email:</label>
+                                    <div class="col-sm-10 input-group">
+                                        <input class="btn btn-lg" type="email" class="form-control" id="email_id" name="email_name" placeholder="name@domain.com" required>
+                                        <button class="btn btn-info btn-lg" type="submit" class="btn btn-primary">Get Updates!</button>
+                                    </div>  
+                                </div>		       
                                     <p class="help-text">We value your privacy and will never sell your email address.</p>
-                                </div>  
-                            </div>		
-                            
-                            <div class="form-group"> <!-- Submit Button -->
-                                <div class="col-sm-10 col-sm-offset-2">                     
-                                    <button type="submit" class="btn btn-primary">Get Updates!</button>
-                                </div>
-                            </div>        
-                            
-                        </form> 
+                            </form>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -100,14 +119,14 @@
                     <img class="img-circle img-responsive" src="./img/secureIcon2.png">
                     <h2 class="icon-heading">Keep Items Secure
                     </h2>
-                    <p class="lead">Sweat Resistant Zipper Pockets</p>
+                    <p class="lead">Sweat Resistant Zipper Pockets &amp; Durable Seams</p>
             </div>
             <div class="col-md-3"> 
                     <img class="img-circle img-responsive" src="./img/featherIcon.png">
                     <h2 class="icon-heading">Reduce Discomfort &amp; Chaffing
                     </h2>
                     <p class="lead">Patent Pending Compression Design Stabilize Item Movement. </br> 
-                    Allowing Full Range of Athletic Motion</p>
+                    Allowing Full Range of Athletic Motion. Uses Soft, Moisture Wicking Fabric with serious stretch</p>
             </div>
             <div class="col-md-3"> 
                     <img class="img-circle img-responsive" src="./img/comfortIcon.png">
@@ -137,10 +156,15 @@
                     </h2>
             </div>
                <div class="col-md-4"> 
-                    <img class="img-responsive" src="./img/compressionshort.jpg">
+                    <img class="img-responsive marginshort" src="./img/compressionshort.jpg">
                     <h2 class="icon-heading hidden">Keep Items Secure
                     </h2>
             </div>
+           <h1> The Emergent Multi-Sport Short is made with a high end polyester-spandex blend that provides a soft touch, mechanical stretch and athletic fit. 
+            Inside is a super stretch compression band that stores items close to the body. This allows athletes to move freely while keeping pocketed items stable. 
+            Pocket placement was engineer tested, providing the optimal placement for ease of use, and range of motion.  
+            All fabric components are moisture wicking, mildew resistant and the pockets are sweat resistant. With a secure water resistant zipper and durably stitched seams you can do just about anything and items won't fall out. 
+            The design is finished with a sublimated side panel. </h1>
         </div>
 
         <hr class="featurette-divider">
@@ -161,7 +185,11 @@
         <hr class="featurette-divider">
         <div class="row">
                 <!-- Third Featurette -->
-                <h1> FULL PAGE VIDEO </h1>
+                <video controls>
+                    <source src="./img/MarcPracticeFullScreen.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
         </div>
         <hr class="featurette-divider">
         <div class="row">
@@ -171,18 +199,23 @@
                     </h2>
                     <div class="col-md-4"> 
                         <img class="img-circle img-responsive" src="http://placehold.it/250x250">
-                        <h2 class="icon-heading hidden">Keep Items Secure
-                        </h2>
+                        <h2 class="icon-heading">Matt Tutak</h2>
+                        <small>Founder</small>
+                        <p>As a recent graduate, starting up a company was quite a challenging journey. With a limited budget, bootstrapped from personal funds, family and friends I had to be resourceful. Through diligence and research, I gathered a best in class team of design and creative talent to launch Emergent.  
+Being a sport enthusiast, there is something beyond competitiveness that motivates me.  It is a conviction to pursue goals far beyond what is perceived as possible or achievable. Standing at 5’9”, I never let my height hinder my athletic ambitions especially with basketball.
+These personal beliefs are core to my company’s mission.  I want to inspire individuals to challenge themselves beyond their expectations and encourage an active lifestyle.</p>
                     </div>
                     <div class="col-md-4"> 
                         <img class="img-circle img-responsive" src="http://placehold.it/250x250">
-                        <h2 class="icon-heading hidden">Keep Items Secure
-                    </h2>
+                        <h2 class="icon-heading">Xochil Scheer</h2>
+                        <small>Patternmaker</small>
+                        <p></p>
                     </div>
                     <div class="col-md-4"> 
                         <img class="img-circle img-responsive" src="http://placehold.it/250x250">
-                        <h2 class="icon-heading hidden">Keep Items Secure
-                        </h2>
+                        <h2 class="icon-heading">Gloria Seto</h2>
+                        <small>Construction</small>
+                        <p></p>
                     </div>
             </div>
         </div>

@@ -1,32 +1,82 @@
-/*
- * Start Bootstrap - One Page Wonder (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
 
+* {
+    box-sizing: border-box;
+}
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: 'Montserrat', serif
+}
+.logo {
+    background-color: white;
+}
+
+/*FORM*/
+.input-group {
+    margin: 20px auto;
+    width: 100%;
+}
+input.btn.btn-lg {
+    width: 60%;
+    height: 70px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid palegoldenrod !important;
+    border-radius: 4px;
+    background-image: url('../img/Emergent_logo.png') !important;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+input.btn.btn-lg:focus {
+    background-color: palegoldenrod;
+    color: darkblue;
+    border: 2px solid goldenrod !important;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: goldenrod;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 80%;
+}
+button.btn {
+    width: 40%;
+    height: 70px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .header-image {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+    /*background: url('../img/MVI_0446.MOV.Still010.jpg') no-repeat center center scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
+ul {
+    list-style: circle;
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+.headlinetxt {
+    max-width: 90%;
+    padding-left: 200px;
+}
 .headline {
     padding: 120px 0;
 }
 
 .headline h1 {
-    font-size: 130px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+    font-size: 40px;
+    color:black;
 }
 
 .headline h2 {
@@ -37,6 +87,15 @@ body {
 
 .featurette-divider {
     margin: 80px 0;
+}
+.marginshort {
+    margin-top: -120px;
+}
+.email {
+    max-width: 60%;
+    background-color: lightblue;
+    padding: 50px;
+    border-radius: 5px;
 }
 
 .featurette {
@@ -54,6 +113,13 @@ body {
 .featurette-heading {
     font-size: 50px;
 }
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+
+
 
 footer {
     margin: 50px 0;
