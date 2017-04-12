@@ -27,10 +27,10 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -40,16 +40,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img class="logo img-responsive" src="./img/Emergent_logo.png" /></a>
+                <a class="navbar-brand" href="#"><img class="logo img-responsive" src="./img/Emergent_logo_nav.png" /></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav pull-right">
-                    <li>
-                        <a href="#about">About</a>
+                    <li id="mainNavSection" class="active">
+                        <a href="#signup" >About</a>
                     </li>
                     <li>
-                        <a href="#events">Events</a>
+                        <a href="#specs">Specs</a>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
@@ -63,21 +63,35 @@
                      <li>
                         <a href="#Twitter"><img src="./img/icon-twitter.png" /></a>
                     </li>
+                    <li id="navbarForm" >
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                    <input id="email" type="email" class="form-control" name="email" placeholder="Email Address">                                        
+                                </div>
+                            </div>
+                        
+                            <button type="submit" class="navSignUp btn btn-default">Sign Up</button>
+                        </form>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-
+    
     <!-- Full Width Image Header -->
-    <header class="header-image">
+    <header class="header-image" id="signup">
         <div class="headline">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1 class="headlinetxt" id="maintxt">Your Workout Just Got an Upgrade</h1>
-                        <h4 class="headlinetxt" id="uvp">Comfortably and Safely Store Your Essentials – Phones, Keys, Medical Equipment, IDs – in the best fitting athletic shorts you’ll ever wear. </h4>
+                        <div class="maincontent">
+                            <h1  id="titletxt">Your Workout Just Got an Upgrade</h1>
+                            <h4  id="uvp">Comfortably and Safely Store Your Essentials – Phones, Keys, Medical Equipment, IDs – in the best fitting athletic shorts you’ll ever wear. </h4>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <div class="email">
@@ -85,13 +99,13 @@
                             <p>Get The Perks:</p>
                             <ul>
                                 <li>
-                                    <small>Auto-Entry into our giveaway contests</small>
+                                    <h4>Auto-Entry into our giveaway contests</h4>
                                 </li>
                                 <li>
-                                    <small>Member-only discounts and content</small>
+                                    <h4>Member-only discounts and content</h4>
                                 </li>
                                 <li>
-                                    <small>Priority Notification of Kickstarter Launch</small>
+                                    <h4>Priority Notification of Kickstarter Launch</h4>
                                 </li>
                             </ul>
                             <form class="form-horizontal">
@@ -99,7 +113,7 @@
                                     <label for="email_id" class="control-label col-sm-2">Email:</label>
                                     <div class="col-sm-10 input-group">
                                         <input class="btn btn-lg" type="email" class="form-control" id="email_id" name="email_name" placeholder="name@domain.com" required>
-                                        <button class="btn btn-info btn-lg" type="submit" class="btn btn-primary">Get Updates!</button>
+                                        <button class="btn btn-info btn-lg" type="submit" class="mainSignUp btn btn-primary">Get Updates!</button>
                                     </div>  
                                 </div>		       
                                     <p class="help-text">We value your privacy and will never sell your email address.</p>
@@ -116,49 +130,67 @@
          <!-- Icon Bar of UVP -->
         <div class="row iconBar" id="icons">
             <div class="col-md-3"> 
-                    <img class="img-circle img-responsive" src="./img/secureIcon2.png">
-                    <h2 class="icon-heading">Keep Items Secure
-                    </h2>
-                    <p class="lead">Sweat Resistant Zipper Pockets &amp; Durable Seams</p>
+                <div class="iconContainer">
+                    <img class="iconimg img-circle img-responsive" src="./img/secureIcon2.png">
+                    <div class="iconContent">
+                        <h2 class="text-center icon-heading">Keep Items Secure</h2>
+                        <p class="lead">Sweat Resistant Zipper Pockets &amp; Durable Seams</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-3"> 
-                    <img class="img-circle img-responsive" src="./img/featherIcon.png">
-                    <h2 class="icon-heading">Reduce Discomfort &amp; Chaffing
-                    </h2>
-                    <p class="lead">Patent Pending Compression Design Stabilize Item Movement. </br> 
-                    Allowing Full Range of Athletic Motion. Uses Soft, Moisture Wicking Fabric with serious stretch</p>
+                <div class="iconContainer">
+                    <img class="iconimg img-circle img-responsive" src="./img/featherIcon.png">
+                    <div class="iconContent">
+                        <h2 class="text-center icon-heading">Reduce Discomfort &amp; Chaffing
+                        </h2>
+                        <p class="lead">Patent Pending Compression Design Stabilize Item Movement. </br> 
+                            Allowing Full Range of Athletic Motion. Uses Soft, Moisture Wicking Fabric with serious stretch</p>
+                    </div>
+                 </div>
             </div>
             <div class="col-md-3"> 
-                    <img class="img-circle img-responsive" src="./img/comfortIcon.png">
-                    <h2 class="icon-heading">Premium Fit &amp; Design
-                    </h2>
-                    <p class="lead">Fit for any adventure with 4-way Stretch, Moisture Wicking Fabric, &amp; Athletic Fit </br>
-                    Designed with &hearts; in the USA</p>
+                <div class="iconContainer">
+                    <img class="iconimg img-circle img-responsive" src="./img/comfortIcon.png">
+                    <div class="iconContent">
+                        <h2 class="text-center icon-heading">Premium Fit &amp; Design
+                        </h2>
+                        <p class="lead">Fit for any adventure with 4-way Stretch, Moisture Wicking Fabric, &amp; Athletic Fit </br>
+                        Designed with &hearts; in the USA</p>
+                    </div>
+                 </div>
             </div>
              <div class="col-md-3"> 
-                    <img class="img-circle img-responsive" src="./img/ResistantIcon.png">
-                    <h2 class="icon-heading">Water Resistant
-                    </h2>
-                    <p class="lead">Sweat-Protection for your electronics</p>
+                 <div class="iconContainer">
+                    <img class="iconimg img-circle img-responsive" src="./img/ResistantIcon.png">
+                    <div class="iconContent">
+                        <h2 class="text-center icon-heading">Water Resistant
+                        </h2>
+                        <p class="lead">Sweat-Protection for your electronics</p>
+                    </div>
+                 </div>
             </div>
         </div>
         <hr class="featurette-divider">
-        <div class="row">
+        <div class="row" id="specs">
             <!-- First Featurette -->
            <div class="col-md-4"> 
+               <div class="short-section hidden">
                     <img class="img-responsive" src="./img/fullshort.jpg">
-                    <h2 class="icon-heading hidden">Keep Items Secure
-                    </h2>
+                    <h2 class="icon-heading hidden">Keep Items Secure</h2>
+                </div>
             </div>
-            <div class="col-md-4"> 
+            <div class="col-md-4 short-main"> 
                     <img class="img-responsive" src="./img/transparentshort.jpg">
                     <h2 class="icon-heading hidden">Keep Items Secure
                     </h2>
             </div>
-               <div class="col-md-4"> 
+            <div class="col-md-4"> 
+                <div class="short-section hidden">
                     <img class="img-responsive marginshort" src="./img/compressionshort.jpg">
                     <h2 class="icon-heading hidden">Keep Items Secure
                     </h2>
+                 </div>
             </div>
            <h1> The Emergent Multi-Sport Short is made with a high end polyester-spandex blend that provides a soft touch, mechanical stretch and athletic fit. 
             Inside is a super stretch compression band that stores items close to the body. This allows athletes to move freely while keeping pocketed items stable. 
@@ -198,29 +230,28 @@
                     <h2 class="featurette-heading">The Team
                     </h2>
                     <div class="col-md-4"> 
-                        <img class="img-circle img-responsive" src="http://placehold.it/250x250">
-                        <h2 class="icon-heading">Matt Tutak</h2>
-                        <small>Founder</small>
-                        <p>As a recent graduate, starting up a company was quite a challenging journey. With a limited budget, bootstrapped from personal funds, family and friends I had to be resourceful. Through diligence and research, I gathered a best in class team of design and creative talent to launch Emergent.  
+                        <img class="img-circle img-responsive teamimg" src="http://placehold.it/250x250">
+                        <h2 class="icon-heading text-center">Matt Tutak</h2>
+                        <h4 class="text-center">Founder</h4>
+                        <p class="text-center">As a recent graduate, starting up a company was quite a challenging journey. With a limited budget, bootstrapped from personal funds, family and friends I had to be resourceful. Through diligence and research, I gathered a best in class team of design and creative talent to launch Emergent.  
 Being a sport enthusiast, there is something beyond competitiveness that motivates me.  It is a conviction to pursue goals far beyond what is perceived as possible or achievable. Standing at 5’9”, I never let my height hinder my athletic ambitions especially with basketball.
 These personal beliefs are core to my company’s mission.  I want to inspire individuals to challenge themselves beyond their expectations and encourage an active lifestyle.</p>
                     </div>
                     <div class="col-md-4"> 
-                        <img class="img-circle img-responsive" src="http://placehold.it/250x250">
+                        <img class="img-circle img-responsive teamimg" src="http://placehold.it/250x250">
                         <h2 class="icon-heading">Xochil Scheer</h2>
-                        <small>Patternmaker</small>
+                        <h4>Patternmaker</h4>
                         <p></p>
                     </div>
                     <div class="col-md-4"> 
-                        <img class="img-circle img-responsive" src="http://placehold.it/250x250">
+                        <img class="img-circle img-responsive teamimg" src="http://placehold.it/250x250">
                         <h2 class="icon-heading">Gloria Seto</h2>
-                        <small>Construction</small>
+                        <h4>Construction</h4>
                         <p></p>
                     </div>
             </div>
         </div>
         <hr class="featurette-divider">
-
         <!-- Fifth Featurette -->
         <div class="featurette" id="contact">
             <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
@@ -249,6 +280,7 @@ These personal beliefs are core to my company’s mission.  I want to inspire in
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
